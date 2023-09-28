@@ -1,6 +1,18 @@
 {
-  "extends": ["next/core-web-vitals"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals"
+  ],
   "rules": {
     "no-undef": "off"
-  }
+  },
+  "parser": "@typescript-eslint/parser"
 }
